@@ -29,5 +29,10 @@ public class SolarSystem {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	@Override
+	public String toString() {
+		return "Solar system : " + id + " named : " + name;
+	}
 
 }

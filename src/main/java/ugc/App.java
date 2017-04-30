@@ -16,8 +16,7 @@ public class App {
 			SolarSystemDao solarSystemDao = context.getBean(SolarSystemDao.class);
 			solarSystemDao.createNewSolarSystem("Sun solar system");
 			System.out.println(solarSystemDao.findAllSolarSystems());
-//			SolarSystem solarSystem = solarSystemDao.createNewSolarSystem("Sun solar system");
-//			System.out.println(solarSystemDao.findAllSolarSystems());
+			System.out.println(solarSystemDao.findByNameLike("%solar%"));
 			
 		} finally {
 			context.close();
