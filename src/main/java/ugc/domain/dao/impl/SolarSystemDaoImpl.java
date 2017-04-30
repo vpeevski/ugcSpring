@@ -9,11 +9,11 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import ugc.domain.dao.api.SolarSystemDao;
+import ugc.domain.dao.api.SolarSystemDaoCustom;
 import ugc.domain.entities.SolarSystem;
 
 @Repository
-public class SolarSystemDaoImpl implements SolarSystemDao {
+public class SolarSystemDaoImpl implements SolarSystemDaoCustom {
 
 	@PersistenceContext
 	EntityManager entityManager;

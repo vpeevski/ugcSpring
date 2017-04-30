@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -24,7 +25,7 @@ import ugc.domain.dao.impl.SolarSystemDaoImpl;
 
 @Configuration
 @ComponentScan(basePackageClasses = {SolarSystemDaoImpl.class})
-//@EnableJpaRepositories(basePackages = {"ugc.domain.dao.api"})
+@EnableJpaRepositories(basePackages = {"ugc.domain.dao.api"})
 @EnableTransactionManagement
 public class AppConfig {
 
