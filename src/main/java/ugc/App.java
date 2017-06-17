@@ -9,6 +9,7 @@ import ugc.domain.dao.api.SolarSystemDao;
 
 public class App {
 
+
 	public static void main(String[] args) {		
 		AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		try {
